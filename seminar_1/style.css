@@ -1,0 +1,20 @@
+h1 {
+    color: green;
+}
+.title {
+    /* для классов */
+    color: aqua;
+    font-size: 50px;
+}
+#el1 {
+    /*для id */
+}
+.text {
+    /* для текстов */
+    background-color: gold;
+}
+.icon, .link {
+    width: 30px;
+    height: 20px;
+    background-color: rgba(120, 230, 220, 0.9);
+}
