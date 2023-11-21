@@ -12,49 +12,49 @@ a {
 
 @font-face{
     font-family: "Gilroy-Semibold";
-    src: url("/homework_6/assets/fonts/gilroy-semibold.ttf");
+    src: url("../fonts/gilroy-semibold.ttf");
     font-style: normal;
     font-weight: 400;
 }
     
 @font-face{
     font-family: "Gilroy-Bold";
-    src: url("/homework_6/assets/fonts/gilroy-bold.ttf");
+    src: url("../fonts/gilroy-bold.ttf");
     font-style: normal;
     font-weight: 400;
 }
     
 @font-face{
     font-family: "Gilroy-Medium";
-    src: url("/homework_6/assets/fonts/gilroy-medium.ttf");
+    src: url("../fonts/gilroy-medium.ttf");
     font-style: normal;
     font-weight: 400;
 }
     
 @font-face{
     font-family: "Gilroy-Regular";
-    src: url("/homework_6/assets/fonts/gilroy-regular.ttf");
+    src: url("../fonts/gilroy-regular.ttf");
     font-style: normal;
     font-weight: 400;
 }
 
 .header {
     display: flex;
+    align-items: center; 
     justify-content: space-between;
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
 }
 
 
 .img_head {
-    margin-top: 40px;
     width: 137px;
     height: 40px;
 }
 
 .menu {
-    margin-top: 51px;
     display: flex;
     list-style: none;
     gap: 30px;
@@ -111,8 +111,6 @@ a {
 }
 
 .intro_buttons_wrapper {
-    width: 374px; 
-    height: 94px;
     display: flex;
     gap: 108px;
     flex-wrap: nowrap;
