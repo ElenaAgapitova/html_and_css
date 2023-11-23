@@ -38,13 +38,16 @@ a {
     font-weight: 400;
 }
 
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header {
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 40px;
 }
 
@@ -81,9 +84,6 @@ a {
     display: flex;
     gap: 15px;
     margin-top: 164px;
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .intro_left {
@@ -154,6 +154,49 @@ a {
     display: flex;
     margin-top: 97px;
     justify-content: space-between;
-   
+}
+
+.icon-content {
+    margin-top: 140px;
+    margin-bottom: 100px;
+    display: flex;
+    gap: 60px;
+
+}
+
+.position-icon {
+    padding-left: 29px; 
+    padding-bottom: 25px;
+    padding-top: 40px;
+    padding-right: 31px;
+}
+
+.title-icons {
+    padding-top: 25px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    line-height: normal;  
+}
+
+.text-icons {
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    line-height: 150%;
+    padding-top: 17px;
+    padding-bottom: 25px;
+}
+
+.link-icons {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 11px;
+    line-height: 150%;
+}
+
+.icon2{
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
 }
 
