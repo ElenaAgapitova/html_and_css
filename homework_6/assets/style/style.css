@@ -154,7 +154,38 @@ a {
     display: flex;
     margin-top: 97px;
     justify-content: space-between;
+    margin-bottom: 96px;
 }
+
+.analitycs-section {
+     background: #FAFAFA;
+}
+
+.analitycs {
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+}
+
+
+.title-analytics {
+    width: 409px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.text-analytics {
+    width: 515px;
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 35px;
+}
+
 
 .icon-content {
     margin-top: 140px;
