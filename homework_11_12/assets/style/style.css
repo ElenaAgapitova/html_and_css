@@ -98,6 +98,12 @@ header {
     align-items: center;
 }
 
+.header-right__images {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
 .brand {
     background-color: #F1E4E6;
     margin-bottom: 65px;
@@ -183,6 +189,7 @@ header {
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
+    white-space: nowrap;
 }
 
 .for-who {
@@ -274,6 +281,7 @@ header {
     font-weight: 400;
     line-height: normal;
     padding: 15px 39px 14px 39px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1439px) {
@@ -333,4 +341,75 @@ header {
     
     }
 
+}
+
+@media screen and (max-width: 767px) {
+
+    .icon_2, .icon_3 {
+        display: none;
+    }
+
+    .brand-wrapper {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .image-man{
+        display: none;
+    }
+
+    .brand-text {
+        margin-top: 148px;
+        margin-bottom: 149px;
+    }
+
+    .brand__text_title {
+        font-size: 38px;
+    }
+
+    .brand__text-content {
+        font-size: 20px;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 36px;
+        margin-top: 64px;
+        margin-bottom: 64px;
+
+    }
+
+    .menu-text {
+        top: 45%;
+    }
+
+
+    .item_4 {
+        grid-column: span 1;
+    
+    }
+
+    .item_4__text {
+        top: 30%;
+    }
+
+    .catalog {
+        max-width: 100%;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+
+    .catalog-product {
+        margin-top: 64.7px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+        margin-bottom: 40.6px;
+    }
+
+    .catalog-button {
+        margin-bottom: 96px;
+    }
 }

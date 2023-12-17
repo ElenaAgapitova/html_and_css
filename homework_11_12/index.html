@@ -13,7 +13,11 @@
     <header>
         <div class="into_header center">
             <img src="./assets/images/logo.svg" alt="logo">
-            <img src="./assets/images/button copy.svg" alt="button_copy">
+            <div class="header-right__images">
+                <img class="icon_1" src="./assets/images/icon_1.svg" alt="icon_1">
+                <img class="icon_2" src="./assets/images/icon_2.svg" alt="icon_2">
+                <img class="icon_3" src="./assets/images/icon_3.svg" alt="icon_3">
+            </div>
         </div>
     </header>
 
@@ -52,8 +56,11 @@
             </div>
         </item>
         <item class="item_4 image-container">
-            <img src="./assets/images/ACCESORIES.png" alt="accesories">
-            <div class="menu-text">
+            <picture>
+                <source media="(max-width: 767px)" srcset="./assets/images/Categories.png">
+                <img src="./assets/images/ACCESORIES.png" alt="accesories">
+            </picture>
+            <div class="menu-text item_4__text">
                 <p class="offer-text">LUXIROUS & TRENDY</p>
                 <p class="for-who">ACCESORIES</p>
             </div>
