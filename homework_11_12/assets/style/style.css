@@ -394,6 +394,39 @@ header {
     font-size: 18px;
     font-weight: 400;
  }
+
+ .form-email {
+    width: 256px;
+    height: 49px;
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #E1E1E1;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 22px;
+ }
+
+ .form-submit {
+    width: 100px;
+    height: 49px;
+    background-color: #F16D7F;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+ }
   
 
 footer {
@@ -420,6 +453,14 @@ footer {
 .contacts-icons {
     display: flex;
     gap: 7.29px;
+}
+
+.contacts-icons button {
+    background-color: #FFF;
+    border: none;
+    width: 32px;
+    height: 32px;
+    
 }
 
 @media screen and (max-width: 1439px) {
@@ -486,6 +527,28 @@ footer {
         gap: 0px;
         padding-bottom: 64px;
     }
+
+    .subscribe {
+        height: 693px;
+        background-position: 25%;
+    }
+
+    .subscribe-items {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 219px;
+    }
+
+    .subscribe-items__descr__text {
+        padding-bottom: 48px;
+    }
+
+    .form-email {
+        width: 256px;
+        height: 49px;
+    }
+
 
 
     .delivery-icon, .sales-icon, .quality-icon {
@@ -569,6 +632,41 @@ footer {
         margin-bottom: 96px;
     }
 
+    .subscribe {
+        height: 550px;
+        background-position: 25%;
+    }
+
+    .subscribe-items {
+        gap: 59px;
+    }
+
+    .subscribe-items__descr img {
+        width: 91.7px;
+        padding-bottom: 0;
+    }
+
+    .subscribe-items__descr__text {
+        font-size: 18px;
+        padding-bottom: 0;
+    }
+
+    
+
+    .subscribe-items__form p {
+        font-size: 14px;
+    }
+
+    .form-email {
+        width: 245.21px;
+        height: 46.935px;
+    }
+    
+    .form-submit {
+        width: 95.787px;
+        height: 46.935px;
+    }
+
     .footer-wrapper {
         display: flex;
         flex-direction: column-reverse;
@@ -579,6 +677,7 @@ footer {
     .contacts-icons {
         padding-top: 43px;
     }
+
 
     .footer-wrapper__text {
         padding-top: 40px;
