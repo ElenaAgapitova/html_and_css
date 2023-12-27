@@ -284,6 +284,128 @@ header {
     cursor: pointer;
 }
 
+.services {
+    background-color: #222224;
+
+}
+
+.services-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.services-items__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.sales-icon {
+    margin-top: 104px;
+    padding-bottom: 19.07px;
+}
+
+.delivery-icon {
+    margin-top: 103px;
+    padding-bottom: 28.07px;
+}
+
+.quality-icon {
+    margin-top: 103px;
+    padding-bottom: 25.06px;
+}
+
+.services-items__title {
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.services-items__text {
+    padding-top: 16px;
+    padding-bottom: 104px;
+    color: #FBFBFB;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 360px;
+}
+
+
+/* .subscribe {
+    position: relative;
+  } */
+
+  .subscribe-box__img {
+    position: relative;
+  }
+  
+  .bg {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(244, 244, 244, 0.70);
+
+  }
+
+  .subscribe img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .subscribe-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subscribe-items img {
+    width: 96px;
+  }
+
+  
+  
+
+footer {
+    background-color: #222224;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrapper__text {
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contacts-icons {
+    display: flex;
+    gap: 7.29px;
+}
+
 @media screen and (max-width: 1439px) {
     .center {
         max-width: 100%;
@@ -340,6 +462,24 @@ header {
         padding-left: 16.5px;
     
     }
+
+
+    .services-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        padding-bottom: 64px;
+    }
+
+
+    .delivery-icon, .sales-icon, .quality-icon {
+        margin-top: 48.5px;
+    }
+
+    .services-items__text {
+        padding-bottom: 0px;
+    }
+
 
 }
 
@@ -412,4 +552,21 @@ header {
     .catalog-button {
         margin-bottom: 96px;
     }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        align-items: center;
+    }
+
+    .contacts-icons {
+        padding-top: 43px;
+    }
+
+    .footer-wrapper__text {
+        padding-top: 40px;
+        padding-bottom: 9px;
+    }
+
 }
