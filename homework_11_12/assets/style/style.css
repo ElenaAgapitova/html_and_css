@@ -346,16 +346,16 @@ header {
     background-image: url('../images/subscribe.png');
     background-position: center;
     background-size: cover;
+    height: 448px;
 }
 
   
 
   .subscribe-items {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-top: 97px;
-    padding-bottom: 126px;
+    align-items: center;
     gap: 365px;
   }
 
@@ -378,6 +378,22 @@ header {
     max-width: 360px;
   }
   
+
+ .subscribe-items__form  {
+    text-align: center;
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 167.2%;
+ } 
+
+ .subscribe-items__form p {
+    font-size: 18px;
+    font-weight: 400;
+ }
   
 
 footer {
