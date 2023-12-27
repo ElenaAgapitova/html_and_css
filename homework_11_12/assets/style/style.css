@@ -342,41 +342,41 @@ header {
 }
 
 
-/* .subscribe {
-    position: relative;
-  } */
+.subscribe {
+    background-image: url('../images/subscribe.png');
+    background-position: center;
+    background-size: cover;
+}
 
-  .subscribe-box__img {
-    position: relative;
-  }
   
-  .bg {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(244, 244, 244, 0.70);
-
-  }
-
-  .subscribe img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
 
   .subscribe-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 97px;
+    padding-bottom: 126px;
+    gap: 365px;
   }
 
   .subscribe-items img {
     width: 96px;
   }
 
+  .subscribe-items__descr {
+    text-align: center;
+  }
+
+  .subscribe-items__descr__text {
+    color: #222224;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+    max-width: 360px;
+  }
   
   
 
