@@ -100,9 +100,97 @@ header {
 
 .header-right__images {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 25px;
 }
+
+.block_menu{
+    width: 232px;
+    height: 634px;
+    background: #FFF;
+    display: none;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    padding-top: 32px;
+    z-index: 1;
+}
+
+.block_menu_list_ul{
+    list-style-type: none;
+}
+
+.block_menu_list_li_total{
+        margin-bottom: 4px;
+}
+.block_menu_list_li_category{
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+.block_menu_list_li_category_item{
+    margin-top: 11px;
+}
+
+.block_menu_list_total{
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 32px;
+}
+.block_menu_list_category{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 32px;
+}
+.block_menu_list_category_item{
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 53px;
+}
+.menu-icon:hover  .block_menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.basket-block{
+    position: relative;
+}
+.basket-block::before{
+    content: '5';
+    color: #FFF;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background-image: url('../images/basket_by.svg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+
+
 
 .brand {
     background-color: #F1E4E6;
@@ -125,6 +213,9 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+
+
 
 .brand__text_title {
     font-size: 48px;
@@ -232,7 +323,55 @@ header {
 
 .item-product {
     background-color:  #F8F8F8;
+    display: flex;
+    flex-direction: column;
 }
+
+.item-product-hover_img{
+    position: relative;
+}
+
+.item-product-hover_img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 56, 56, 0.86);
+    display: none;
+}
+.item-product-hover_img:hover::after{
+    display: block;
+}
+
+.item-product-hover_basket {
+    display: none;
+    width: 139px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    border: 2px solid white;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.item-product-hover_img:hover .item-product-hover_basket{
+    display: flex;
+}
+
+
 
 
 .item-product-description {
@@ -282,6 +421,11 @@ header {
     line-height: normal;
     padding: 15px 39px 14px 39px;
     cursor: pointer;
+}
+
+.style-button:hover {
+    background-color: #F16D7F;
+    color: #FFF;
 }
 
 .services {
@@ -460,8 +604,25 @@ footer {
     border: none;
     width: 32px;
     height: 32px;
+    transition: background-color 0.3s ease;
     
 }
+
+
+  .contacts-icons button:hover {
+    background-color:  #F16D7F; 
+
+  }
+
+  .contacts-icons button svg {
+    fill: #000;
+    transition: fill 0.3s ease;
+  }
+
+  .contacts-icons button:hover svg {
+    fill: white; 
+  }
+
 
 @media screen and (max-width: 1439px) {
     .center {
@@ -515,6 +676,11 @@ footer {
         height: auto;
     }
 
+    .item-product-hover_basket img{
+    width: 26px;
+    height: 24px;
+    }
+    
     .item-product-description {
         padding-left: 16.5px;
     
@@ -564,7 +730,11 @@ footer {
 
 @media screen and (max-width: 767px) {
 
-    .icon_2, .icon_3 {
+    .basket-block, .profile-block {
+        display: none;
+    }
+
+    .basket-block::before {
         display: none;
     }
 
