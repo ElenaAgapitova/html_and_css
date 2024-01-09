@@ -557,7 +557,6 @@ header {
 
  .form-submit {
     width: 100px;
-    height: 49px;
     background-color: #F16D7F;
     border: none;
     border-top-right-radius: 25px;
@@ -828,13 +827,12 @@ footer {
     }
 
     .form-email {
-        width: 245.21px;
+        width: 200px;
         height: 46.935px;
     }
     
     .form-submit {
-        width: 95.787px;
-        height: 46.935px;
+        width: 95px;
     }
 
     .footer-wrapper {
